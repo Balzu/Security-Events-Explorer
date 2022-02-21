@@ -1,6 +1,6 @@
 # Security-Events-Explorer
 
-## A user-friendly and powerful tool to analyze Windows Security Events
+### A user-friendly and powerful tool to analyze Windows Security Events
 <p align="center">
 <img src="animated gif final3.gif" width=300>
 </p>
