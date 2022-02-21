@@ -4,7 +4,7 @@
 <p align="center">
 <img src="see.png" width=300>
 </p>
-__SEE (Security Event Explorer)__is an attempt to create a log intelligence tool which is both user-friendly and powerful.
+__SEE (Security Event Explorer)__ is an attempt to create a log intelligence tool which is both user-friendly and powerful.
 
 Indeed, both during the monitoring activity of a security analyst and during Incident Response processes, we need reliable
 and fast tools to explore logs. One of the best places to look for potential indicators of comprimise is the Windows Event viewer, and Windows Security
