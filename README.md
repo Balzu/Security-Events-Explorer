@@ -24,5 +24,6 @@ and will be working smoothly.
 
 ### Demo
 
+<img src="see-demo.gif" width="100%" >
 
 
