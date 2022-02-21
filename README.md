@@ -1,5 +1,6 @@
 # Security-Events-Explorer
 A user-friendly and powerful tool to analyze Windows Security Events
+<img src="animated gif final3.gif" width="100%" >
 
 SEE (Security Event Explorer) is an attempt to create a log intelligence tool which is both user-friendly and powerful.
 
