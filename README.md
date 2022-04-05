@@ -22,7 +22,7 @@ export the report in PDF format to provide evidence of your monitoring activity 
 
 ## Try
 
-The web-app is currently loaded on http://thebytemachine.com/windows_security_explorer.
+The web-app is currently loaded on https://securityeventsexplorer.com
 
 Code will be added to this GitHub pages as soon as all the features of version 1 will be implemented
 and will be working smoothly.
