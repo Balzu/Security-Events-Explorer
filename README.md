@@ -34,6 +34,8 @@ Run the tool in two distinct containers using Docker:
 
 `docker-compose up`
 
+Then access the tool, by opening your browser and simply typing in the bar: `localhost`
+
 When you are done, turn off the tool:
 
 `docker-compose down`
