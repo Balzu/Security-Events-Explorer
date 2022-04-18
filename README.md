@@ -20,7 +20,25 @@ to start. Then, you can load it on the webapp (note that *logs will stay on your
 apply filtering on time and on events (using the Orchestrator, but this is under development!) and then draw a clear timeline of the events. Finally, you will be able to
 export the report in PDF format to provide evidence of your monitoring activity and detections.
 
-## Try
+## Download and Run ...
+
+Clone the Repo:
+
+`git clone https://github.com/Balzu/Security-Events-Explorer.git`
+
+Enter the folder:
+
+`cd Security-Events-Explorer`
+
+Run the tool in two distinct containers using Docker:
+
+`docker-compose up`
+
+When you are done, turn off the tool:
+
+`docker-compose down`
+
+## ... Or try Online!
 
 The web-app is currently loaded on https://securityeventsexplorer.com
 
