@@ -1,4 +1,4 @@
-let orchestratorHTML = '<iframe src="https://localhost/see_orchestrator" title="orchestrator" style="width:100%; height: 98%; margin:5px 0;"></iframe>'; 
+let orchestratorHTML = '<iframe src="see_orchestrator" title="orchestrator" style="width:100%; height: 98%; margin:5px 0;"></iframe>'; 
 
 `<div id="navigation">
   <div id="leftside">
