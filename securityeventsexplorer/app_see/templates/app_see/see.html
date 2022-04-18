@@ -1,0 +1,69 @@
+{% extends "app_see/see_base.html" %}
+
+{% block head %}
+    {% load static %}
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link href="{% static 'app_see/style/filepond.css' %}" rel="stylesheet"> 
+    <script src="{% static 'app_see/js/sse_orchestrator.js'%}"></script> 
+    <script src="{% static 'app_see/js/filepond.js' %}"></script>   
+    <script src="{% static 'app_see/js/jquery-3.6.0.min.js' %}"></script>  
+    <script src="{% static 'app_see/js/see.js' %}"></script>   
+    <script src="{% static 'app_see/js/security events.js' %}"></script>   
+    <script src="{% static 'app_see/js/see_report_creator.js' %}"></script>   
+    <script src="{% static 'app_see/js/sse_options.js' %}"></script>   
+    <script src="{% static 'app_see/js/html2canvas.min.js' %}"></script>   
+    <script src="{% static 'app_see/js/pdfmake.min.js' %}"></script>   
+	<script src="{% static 'app_see/js/vfs_fonts.js' %}"></script>    
+{% endblock %}
+
+{% block content %}
+    <div class="row show-grid full-height   ">
+	    <div class="col-md-3 options_section"></div>
+      	    <div id="main-options-section" class="col-md-6 options_section"></div>
+	    <div class="col-md-3 options_section"></div>
+    </div>
+    
+    <div class="row show-grid full-height   ">
+	    <div class="col-md-1 options_section"></div>
+      	    <div id="main-options-section" class="col-md-10 options_section">     
+				<div class="w3-sidebar w3-bar-block w3-tbm w3-card" style="width:130px;height: 300px; height: 100%; background-color: rgba(8, 11, 12, 1) !important;">
+					<button class="w3-bar-item w3-button tablink" onclick="openSectionByDirectClick(event, 'Upload')"><b>UPLOAD</b></button>
+					<button id="OptionsBtn" class="w3-bar-item w3-button tablink" onclick="openSectionByDirectClick(event, 'Options')" disabled><b>OPTIONS</b></button>
+					<button id="OrchestratorBtn" class="w3-bar-item w3-button tablink" onclick="openSectionByDirectClick(event, 'Orchestrator')" disabled><b>ORCHESTRATOR</b></button>
+					<button id="DrawBtn" class="w3-bar-item w3-button tablink" onclick="openSectionByDirectClick(event, 'Draw')" disabled><b>DRAW</b></button>
+					<button id="ExportBtn" class="w3-bar-item w3-button tablink" onclick="openSectionByDirectClick(event, 'Export')" disabled><b>EXPORT</b></button>
+				</div>
+
+				<div style="margin-left:130px; height: calc(100vh - 100px);">
+					<div id="Upload" class="w3-container city w3-animate-opacity wse-content-box" style="overflow:auto; height:100%; background-color: hsl(220, 25%, 10%);">
+						<h4 id="app-description">
+						<b>Windows Security Explorer</b> is a security tool that lets you navigate the  Windows Security Events in a 
+						user-friendly fashion. To start, export the Windows security logs in XML format and upload them to your browser
+						using the button below. All the magic happens in your browser, so no logs are sent over the Internet for any purpose.
+						</h4>   
+						<input id="uploaded-wse-logs" type="file" class="filepond">  
+						<button type="button" id="upload-ws-logs" class="btn btn-primary build_timeline">Upload</button>
+					</div>
+
+					<div id="Options" class="w3-container city w3-animate-opacity wse-content-box" style="display:none; overflow:auto; height:100%; background-color: hsl(220, 25%, 10%) ;" >
+					</div>
+
+					<div id="Orchestrator" class="w3-container city w3-animate-opacity wse-content-box" style="display:none; overflow:auto; height:100%; background-color: hsl(220, 25%, 10%) ;" >
+					</div>
+
+					<div id="Draw" class="w3-container city w3-animate-opacity wse-content-box" style="display:none; overflow:auto; height:100%; background-color: hsl(220, 25%, 10%) ;">
+						<div id="visualization"></div>
+					</div>
+
+					<div id="Export" class="w3-container city w3-animate-opacity wse-content-box" style="display:none; overflow:auto; height:100%; background-color: hsl(220, 25%, 10%) ;">
+					</div>
+				</div>		    	
+	    	</div>
+	    <div class="col-md-1 options_section"></div>
+    </div>
+    
+    <div class="row show-grid">
+      <div class="col-md-12 timeline_section"></div>
+    </div>
+{% endblock content %}
+

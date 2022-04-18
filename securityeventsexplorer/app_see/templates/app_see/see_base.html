@@ -1,0 +1,53 @@
+{% load bootstrap3 %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet"  href="{% static 'app_see/style/style.css'%}" />
+    <link rel="stylesheet"  href="{% static 'app_see/style/timeline.css'%}" />
+    <link href="{% static 'app_see/style/saira-extra-condensed.css'%}" rel="stylesheet" type="text/css">    
+    <link href="{% static 'app_see/style/gugi.css'%}"  rel="stylesheet" type="text/css">
+    <title>Security Events Explorer</title>
+    <script type="text/javascript" src="{% static 'app_see/js/vis-timeline-graph2d.min.js'%}"></script>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}  
+    {% block head %}{% endblock %}
+    <script type="text/javascript" src="{% static 'app_see/js/daterangepicker.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'app_see/style/daterangepicker.css'%}" />  
+    <link href="{% static 'app_see/style/vis-timeline-graph2d.min.css'%}" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>    
+    <nav class="navbar-home navbar navbar-default navbar-static-top">
+      <div class="container">          
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+          </button>
+          <img src = "{% static 'app_see/images/logo.png'  %}" class="navbar-brand" style="padding: 10px 15px 10px 15px;"  >
+          <a class="navbar-brand" href="{% url 'app-see:security_events_explorer' %}">
+                    Security Events Explorer</a>
+        </div>        
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'app-see:security_events_explorer' %}">App</a></li>
+            <li><a href="{% url 'app-see:security_events_explorer' %}">Documentation</a></li>
+            <li><a href="{% url 'app-see:security_events_explorer' %}">Downloads</a></li>
+            <li><a href="{% url 'app-see:security_events_explorer' %}">Contacts</a></li>
+          </ul>          
+        </div>        
+      </div>
+    
+    </nav>
+    <div class="container-fluid ">
+      <div>
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

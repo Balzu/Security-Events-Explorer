@@ -1,0 +1,126 @@
+#navbar{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.gray-background{
+    background-color: #e8eaed;
+}
+
+
+entry-date{
+    font-size: small;
+    font-weight: bold;
+}
+
+#byte-machine-container{
+margin-top: calc((100vh - (536px + 100px))/2); /*536 for title and image, 100 for navbar and margins*/
+}
+
+.navbar-home{
+    background-color: #0074D9 !important;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.2);
+}
+
+.navbar-brand{
+    color:white !important;
+    font-size: 3rem !important;
+    font-weight: 700;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar-nav>li>a{
+    color:white !important;
+}
+
+.navbar-nav>li>a:hover{
+    background-color: #2A4B7C !important;
+}
+
+.standout{
+    transition: box-shadow .3s;
+    border-radius:10px;
+    border: 1px solid #ccc;
+}
+
+.standout:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+h4{
+  line-height: 1.5 !important;
+}
+
+h1{
+  word-wrap: break-word;
+}
+
+pre-inline {
+    display: inline;
+    width: fit-content;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+}
+
+/* Stile per i link agli articoli completi nella homepage */
+h4 a{
+    color:black;
+    text-decoration:none;
+}
+
+h4 a:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.panel_image{
+    max-width: 70%;
+    margin: auto;
+    display: block; 
+}
+
+@media (min-width:992px){ 
+	#topics-panel {
+		position:fixed;
+	}
+	.custom_panel{
+	    height: 900px;
+	}
+	.custom_panel_heading{
+	    height: 24.5%;
+	}
+	.panel_image{
+	    max-width: 70%; 
+            margin: auto;
+            display: block;
+	    position: absolute; 
+            bottom: 30px;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1680px){
+      
+	
+      .home-article-title {
+          font-size: 1.4vw !important;
+      }
+
+	
+
+      
+      .home-article-summary > h4 {
+          font-size : 1.05vw !important;
+      }
+      
+}
+
+
