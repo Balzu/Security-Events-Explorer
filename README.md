@@ -38,12 +38,10 @@ When you are done, turn off the tool:
 
 `docker-compose down`
 
-## ... Or try Online!
+## ... Or try it Online!
 
 The web-app is currently loaded on https://securityeventsexplorer.com
 
-Code will be added to this GitHub pages as soon as all the features of version 1 will be implemented
-and will be working smoothly.
 
 ### Demo
 
