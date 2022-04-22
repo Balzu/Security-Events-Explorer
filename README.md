@@ -49,7 +49,7 @@ When you are done, turn off the tool:
 
 ## ... Or try it Online!
 
-The web-app is currently loaded on https://securityeventsexplorer.com
+The web-app is loaded at https://securityeventsexplorer.com
 
 ## Getting Started
 
