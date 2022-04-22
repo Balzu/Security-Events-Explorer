@@ -24,7 +24,9 @@ export the report in PDF format to provide evidence of your monitoring activity 
 Prerequisites:
 
 You will need **Docker** and **Docker Compose** to run the tool: you can find the steps on the Docker website:
+
 **Docker** : [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
+
 **Docker Compose** : [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 Clone the Repo:
