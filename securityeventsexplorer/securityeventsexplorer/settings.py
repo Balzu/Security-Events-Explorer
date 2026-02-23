@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
@@ -139,7 +139,7 @@ LOGGING = {
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = '/static/'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
