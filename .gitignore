@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+debug.log
+securityeventsexplorer/static/admin/
+securityeventsexplorer/static/bootstrap3/
